@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body, html
+{
+    height: 100%;
+}
+.bg-image {
+   
+    background-image: url("https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  
+
+header
+{
+    width: 100%;
+    position:sticky;
+    top:0;
+    z-index: 1;
+    background: transparent;
+}
+header.container
+{
+    height:10vh;
+    width:100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.logo
+{
+    display: flex;
+    gap:14px;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    width:50px ;
+}
+.logo p
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 27px;
+    font-weight: 550;
+    cursor: default;
+    color:black;
+}
+a
+{
+    text-decoration: none;
+    color:black;
+}
+ul
+{
+    display: flex;
+    list-style: none;
+    gap:14px;
+
+}
+li
+{
+    font-size: 27px;
+}
+nav
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+.main
+{
+    width:100%;
+    height:50vh;
+    position:absolute;
+}
+.main img{
+    display: block;
+    margin: auto;
+    height: 150%;
+
+}
+.content
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin:auto;
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+.content .container
+{
+    padding-top: 105px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: auto;
+    height: 100%;
+    gap:0.02px;
+}
+.todo
+{
+    display: flex;
+    padding: 14px;
+}
+.todo_value
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: bold;
+    flex-grow: 1;
+    border-bottom: 2px solid rgba(165, 42, 42, 0.033);
+}
+.todo_checkbox
+{
+   cursor:inherit;
+}
+.todo:has(.todo_checkbox:checked)
+{
+    color:black;
+    background:white;
+    text-decoration: line-through 1.5px;
+}
